@@ -87,5 +87,18 @@ def entscheidung(loop=3):
 # schleife(wert1,30)
 entscheidung(200)
 
-n=float(1/7)
-print("\n%.100f"%n)
+print("-----------------------")
+print("-----------------------")
+# Darstellung der doppelten Genauigkeit
+
+x = 1 / 7
+print(type(x))
+print(x)                # 18 digits
+
+print("-----------------------")
+
+y = Decimal(1) / Decimal(7)
+print(type(y))
+print(y)                # 28 digits
+print("%.100f"%y)       # 100 digits
+print()
